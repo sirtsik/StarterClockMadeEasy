@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_clock_next_start_label"
+        android:layout_width="108dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="Next start in:"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_clock_next_start"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/digital_7_mono"
+        android:text="00:00:00"
+        android:textColor="@color/colorText"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_clock_next_start_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_clock_next_start_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_clock_next_start_label" />
+
+    <TextView
+        android:id="@+id/tv_competitor_number_label"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Competitor number:"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_competitor_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_clock" />
+
+    <TextView
+        android:id="@+id/tv_competitor_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/digital_7_mono"
+        android:text="0000"
+        android:textColor="@color/colorText"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_clock"
+        app:layout_constraintTop_toBottomOf="@+id/tv_competitor_number_label" />
+
+    <TextView
+        android:id="@+id/tv_main_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/digital_7_mono"
+        android:text="00:00:00"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorText"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_clock_next_start" />
+
+    <TextView
+        android:id="@+id/tv_countdown_until_start_ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:fontFamily="@font/digital_7_mono"
+        android:gravity="end"
+        android:text=":00"
+        android:textColor="@color/colorText"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_competitor_number"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_clock" />
+</android.support.constraint.ConstraintLayout>
